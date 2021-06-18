@@ -13,6 +13,12 @@ public class EntregaNA : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if {oncollisionenter con collider hijo de player}
+            //if {mouse down}
+                //Buscar GameObject EtiquetaNA por ID
+                    //if {GameObject se encuentra}
+                        //Enviar paquete a script "EvaluacionPedidos"
+                    //Poner mensaje en canvas "La etiqueta es incorrecta"
+                    //Restar 30 a la puntuación final
     }
 }

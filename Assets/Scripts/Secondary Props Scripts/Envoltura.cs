@@ -13,6 +13,11 @@ public class Envoltura : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if {PlayerControls.ManosVacias = false}
+            //if {Hijo de player es CajaG, CajaM o CajaC}
+                //if {oncollisionenter con collider hijo de player}
+                    //if {mouse down}
+                        //DelayLento.DLFinish == true
+                            //Sumar ValorCajaX + Envoltura
     }
 }

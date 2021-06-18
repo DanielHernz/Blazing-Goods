@@ -13,6 +13,9 @@ public class EtiquetaINT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if {oncollisionenter con collider hijo de player}
+            //if {mouse down}
+                //GameObject EtiquetaINT se transfiere a player como su hijo
+                //PosarProp.ObjetoON = false
     }
 }

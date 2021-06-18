@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PropiedadProp : MonoBehaviour
 {
+    public string PropID;
+    public int ValorProp;
+    public Transform PosicionProp;
     // Start is called before the first frame update
-    void Start()
+    public PropiedadProp(string ID, int ValorProp)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        this.PropID=ID;
+        this.ValorProp=ValorProp;
     }
 }

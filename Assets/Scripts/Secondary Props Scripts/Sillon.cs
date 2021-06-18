@@ -13,6 +13,11 @@ public class Sillon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if {PlayerControl.ManosVacias = true}
+            //if {oncollisionenter con collider hijo de player}
+                //if {mouse down}
+                    //Deshabilitar script "PlayerControls"
+                    //DelayRapido.DRFinish == true
+                    //Player.Cansancio = 0
     }
 }

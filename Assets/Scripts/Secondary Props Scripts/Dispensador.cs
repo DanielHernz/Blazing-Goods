@@ -13,6 +13,12 @@ public class Dispensador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Asignar GameObject fuente
+        //Asignar GameObject a instanciar
+        //if {PlayerControl.ManosVacias = true}
+            //if {oncollisionenter con collider hijo de player}
+                //if {mouse down}
+                    //Instanciar GameObject
+                    //Convertir GameObject en hijo de Player
     }
 }
