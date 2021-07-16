@@ -1,9 +1,11 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : PlayerControls
 {
+    public Rigidbody RB;
     public int PlayerID;
     public string Nombre;
     public int VelocidadDIR;
@@ -15,6 +17,7 @@ public class Player : PlayerControls
         bdPlayers = GameObject.FindObjectOfType<BasePlayers>();
         
         CargarDatos(PlayerID);
+        //MovimientoTeclas();
     }
 
     void CargarDatos(int id)
@@ -27,6 +30,14 @@ public class Player : PlayerControls
                 this.VelocidadDIR=bdPlayers.NuevoJugador[i].VelocidadDIR;
                 this.VelocidadROT=bdPlayers.NuevoJugador[i].VelocidadROT;   
             }
+        }
+    }
+
+    private void Update() 
+    {
+        if (Input.GetKey("w"))
+        {
+            RB.AddForce(0,0,500* Time.deltaTime);
         }
     }
 }
