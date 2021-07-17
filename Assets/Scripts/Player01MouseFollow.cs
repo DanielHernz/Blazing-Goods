@@ -1,31 +1,19 @@
+//Este script hace que la cámara encuentre el puntero del mouse en el espacio 3D y lo transforma en coordenadas.
+//Necesario para poder rotar al personaje y facilitar el gameplay.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player01MouseFollow : MonoBehaviour
 {
-    public Camera Camera;
-    Vector3 MousePos;
-    public Transform Player01Rot;
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Camera Camara;
+    private void Update() 
     {
-        
+        Ray ray = Camara.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit raycastaHit))
+        {
+            transform.position = raycastaHit.point;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //MousePos = Camera.ScreenToViewportPoint(Input.mousePosition);
-        float VistaX = Input.GetAxis("Mouse X") * 500 * Time.deltaTime;
-        float VistaZ = Input.GetAxis("Mouse Z") * 500 * Time.deltaTime;
-        Player01Rot.Rotate(Vector3.up * VistaX);
-    }
-    /*
-    void FixedUpdate()
-    {
-        Vector3 LookDir = MousePos;
-        float angulo = Mathf.Atan2(LookDir.x,LookDir.z) * Mathf.Rad2Deg - 90f;  
-    }
-    */
 }

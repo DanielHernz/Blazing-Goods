@@ -1,3 +1,5 @@
+//Este script asigna el array del script BasePlayers a los players 1 y 2.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +18,6 @@ public class PlayerDistribution : MonoBehaviour
         
         CargarDatos(PlayerID);
         CargarDatos(VelocidadDIR);
-        //MovimientoTeclas();
     }
 
     void CargarDatos(int id)

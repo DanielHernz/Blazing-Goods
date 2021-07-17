@@ -9,6 +9,7 @@ public class Player01 : MonoBehaviour
     float VelocidadDir = 900f;
     float VelocidadRot = 200f;
     public Transform Player01Rot;
+    public Transform MousePosition3D;
 
     private void Start() 
     {
@@ -33,8 +34,6 @@ public class Player01 : MonoBehaviour
             RB.AddForce(VelocidadDir * Time.deltaTime,0,0);
         }
 
-        //float VistaX = Input.GetAxis("Mouse X") * VelocidadRot * Time.deltaTime;
-        //float VistaY = Input.GetAxis("Mouse Y") * VelocidadRot * Time.deltaTime;
-        //Player01Rot.Rotate(Vector3.up * VistaX);
+        transform.LookAt(MousePosition3D);
     }
 }

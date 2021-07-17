@@ -1,3 +1,5 @@
+//Este script es el Constructor que declara las variables base del personaje.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

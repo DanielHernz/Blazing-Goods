@@ -1,3 +1,5 @@
+//Script crea un array de dos espacios y asigna los valores a las variables ubicadas en el script PlayerConstructor
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
