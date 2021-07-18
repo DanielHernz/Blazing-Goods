@@ -1,3 +1,5 @@
+//Este script provoca el movimiento y rotación del personaje.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +13,10 @@ public class Player01 : MonoBehaviour
     public Transform Player01Rot;
     public Transform MousePosition3D;
 
+    private void Awake() 
+    {
+                
+    }
     private void Start() 
     {
         //DatosPlayer.VelocidadDIR = VelocidadDir;
