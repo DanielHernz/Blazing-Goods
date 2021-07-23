@@ -6,38 +6,35 @@ using UnityEngine;
 
 public class Player01 : MonoBehaviour
 {
+    //BasePlayers BaseJugadores = new BasePlayers();
     PlayerDistribution DatosPlayer = new PlayerDistribution();
-    public Rigidbody RB;
-    float VelocidadDir = 900f;
-    float VelocidadRot = 200f;
+    public Rigidbody RigidbodyPlayer01;
     public Transform Player01Rot;
     public Transform MousePosition3D;
-
-    private void Awake() 
-    {
-                
-    }
+    public int VelocidadDir;
     private void Start() 
     {
-        //DatosPlayer.VelocidadDIR = VelocidadDir;
+        //this.VelocidadDir = DatosPlayer.VelocidadDIR;
     }
+
     private void Update() 
     {
+        this.VelocidadDir = DatosPlayer.VelocidadDIR;
         if (Input.GetKey("w"))
         {
-            RB.AddForce(0,0,VelocidadDir * Time.deltaTime);
+            RigidbodyPlayer01.AddForce(0,0,VelocidadDir * Time.deltaTime);
         }
         if (Input.GetKey("s"))
         {
-            RB.AddForce(0,0,-VelocidadDir * Time.deltaTime);
+            RigidbodyPlayer01.AddForce(0,0,-VelocidadDir * Time.deltaTime);
         }
         if (Input.GetKey("a"))
         {
-            RB.AddForce(-VelocidadDir * Time.deltaTime,0,0);
+            RigidbodyPlayer01.AddForce(-VelocidadDir * Time.deltaTime,0,0);
         }
         if (Input.GetKey("d"))
         {
-            RB.AddForce(VelocidadDir * Time.deltaTime,0,0);
+            RigidbodyPlayer01.AddForce(VelocidadDir * Time.deltaTime,0,0);
         }
 
         transform.LookAt(MousePosition3D);

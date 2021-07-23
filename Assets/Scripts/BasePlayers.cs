@@ -13,7 +13,7 @@ public class BasePlayers : MonoBehaviour
     void Awake()
     {
         NuevoJugador=new PlayerConstructor[2];
-        NuevoJugador[0]= new PlayerConstructor("Shark",1,10,7,5);
-        NuevoJugador[1]= new PlayerConstructor("Mouse",2,10,7,5);
+        NuevoJugador[0]= new PlayerConstructor("Player01",1,9000);
+        NuevoJugador[1]= new PlayerConstructor("Player02",2,9000);
     }
 }

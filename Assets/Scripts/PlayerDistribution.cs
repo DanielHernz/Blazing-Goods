@@ -9,15 +9,12 @@ public class PlayerDistribution : MonoBehaviour
     public int PlayerID;
     public string Nombre;
     public int VelocidadDIR;
-    public int VelocidadROT;
-    public int Impulso;
     BasePlayers bdPlayers =new BasePlayers();
     private void Start() 
     {
         bdPlayers = GameObject.FindObjectOfType<BasePlayers>();
         
         CargarDatos(PlayerID);
-        CargarDatos(VelocidadDIR);
     }
 
     void CargarDatos(int id)
@@ -28,7 +25,6 @@ public class PlayerDistribution : MonoBehaviour
             {
                 this.Nombre=bdPlayers.NuevoJugador[i].Nombre;
                 this.VelocidadDIR=bdPlayers.NuevoJugador[i].VelocidadDIR;
-                this.VelocidadROT=bdPlayers.NuevoJugador[i].VelocidadROT;
             }
         }
     }

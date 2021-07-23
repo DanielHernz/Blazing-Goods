@@ -607,11 +607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: 2
+  PlayerID: 0
   Nombre: 
   VelocidadDIR: 0
-  VelocidadROT: 0
-  Impulso: 0
 --- !u!65 &950844885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -821,11 +819,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: 1
+  PlayerID: 0
   Nombre: 
   VelocidadDIR: 0
-  VelocidadROT: 0
-  Impulso: 0
 --- !u!135 &997509084
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -931,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd593f2cb4b5ce04bbf92fc1d2f1a5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB: {fileID: 997509088}
+  RigidbodyPlayer01: {fileID: 0}
   Player01Rot: {fileID: 997509087}
   MousePosition3D: {fileID: 648561387}
 --- !u!1 &1269298043
@@ -1725,12 +1721,12 @@ Rigidbody:
   m_GameObject: {fileID: 1714331344}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 2
+  m_Drag: 3
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &1714331346
 MonoBehaviour:
@@ -1744,11 +1740,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerID: 0
+  PlayerID: 1
   Nombre: 
   VelocidadDIR: 0
-  VelocidadROT: 0
-  Impulso: 0
 --- !u!4 &1714331347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44c20e742d1919b4487a837327f855c5, type: 3}
@@ -1780,7 +1774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd593f2cb4b5ce04bbf92fc1d2f1a5fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RB: {fileID: 1714331345}
+  RigidbodyPlayer01: {fileID: 1714331345}
   Player01Rot: {fileID: 1714331347}
   MousePosition3D: {fileID: 648561387}
 --- !u!1 &1767578066
