@@ -6,6 +6,11 @@ using UnityEngine;
 
 public class PlayerDistribution : MonoBehaviour
 {
+    public Rigidbody RigidbodyPlayer01;
+    public Transform Player01Rot;
+    public Transform MousePosition3D;
+
+
     public int PlayerID;
     public string Nombre;
     public int VelocidadDIR;
@@ -27,5 +32,27 @@ public class PlayerDistribution : MonoBehaviour
                 this.VelocidadDIR=bdPlayers.NuevoJugador[i].VelocidadDIR;
             }
         }
+    }
+
+    private void Update() 
+    {
+        if (Input.GetKey("w"))
+        {
+            RigidbodyPlayer01.AddForce(0,0,VelocidadDIR * Time.deltaTime);
+        }
+        if (Input.GetKey("s"))
+        {
+            RigidbodyPlayer01.AddForce(0,0,-VelocidadDIR * Time.deltaTime);
+        }
+        if (Input.GetKey("a"))
+        {
+            RigidbodyPlayer01.AddForce(-VelocidadDIR * Time.deltaTime,0,0);
+        }
+        if (Input.GetKey("d"))
+        {
+            RigidbodyPlayer01.AddForce(VelocidadDIR * Time.deltaTime,0,0);
+        }
+
+        transform.LookAt(MousePosition3D);
     }
 }

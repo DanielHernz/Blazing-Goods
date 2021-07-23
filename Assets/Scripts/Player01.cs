@@ -7,19 +7,20 @@ using UnityEngine;
 public class Player01 : MonoBehaviour
 {
     //BasePlayers BaseJugadores = new BasePlayers();
-    PlayerDistribution DatosPlayer = new PlayerDistribution();
+    //PlayerDistribution DatosPlayer = new PlayerDistribution();
+    //private PlayerDistribution PlayerDistribution;
+    //private PlayerConstructor PlayerConstructor;
     public Rigidbody RigidbodyPlayer01;
     public Transform Player01Rot;
     public Transform MousePosition3D;
     public int VelocidadDir;
     private void Start() 
     {
-        //this.VelocidadDir = DatosPlayer.VelocidadDIR;
+        
     }
 
     private void Update() 
     {
-        this.VelocidadDir = DatosPlayer.VelocidadDIR;
         if (Input.GetKey("w"))
         {
             RigidbodyPlayer01.AddForce(0,0,VelocidadDir * Time.deltaTime);
