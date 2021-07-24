@@ -1,4 +1,10 @@
-//Script crea un array de dos espacios y asigna los valores a las variables ubicadas en el script PlayerConstructor
+//Hernández Gutiérrez Daniel
+//Programación Orientada a Objetos
+
+// Controlador. Entregable 24 de Julio.
+/*
+Este script asigna los valores a las variables declaradas en el constructor y las ordena en un array.
+*/
 
 using System.Collections;
 using System.Collections.Generic;

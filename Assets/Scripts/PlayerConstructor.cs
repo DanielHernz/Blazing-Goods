@@ -1,4 +1,10 @@
-//Este script es el Constructor que declara las variables base del personaje.
+//Hernández Gutiérrez Daniel
+//Programación Orientada a Objetos
+
+// Controlador. Entregable 24 de Julio.
+/*
+Constructor que declara las variables base.
+*/
 
 using System.Collections;
 using System.Collections.Generic;

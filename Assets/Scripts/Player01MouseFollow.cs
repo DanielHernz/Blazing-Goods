@@ -1,5 +1,11 @@
-//Este script hace que la cámara encuentre el puntero del mouse en el espacio 3D y lo transforma en coordenadas.
-//Necesario para poder rotar al personaje y facilitar el gameplay.
+//Hernández Gutiérrez Daniel
+//Programación Orientada a Objetos
+
+// Controlador. Entregable 24 de Julio.
+
+/*
+Este script se encarga de hacer que el puntero del mouse pueda interactuar con el entorno 3D, facilitando el lookAt.
+*/
 
 using System.Collections;
 using System.Collections.Generic;
