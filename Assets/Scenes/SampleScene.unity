@@ -607,6 +607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RigidbodyPlayer01: {fileID: 0}
+  Player01Rot: {fileID: 0}
+  MousePosition3D: {fileID: 0}
   PlayerID: 0
   Nombre: 
   VelocidadDIR: 0
@@ -819,6 +822,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RigidbodyPlayer01: {fileID: 0}
+  Player01Rot: {fileID: 0}
+  MousePosition3D: {fileID: 0}
   PlayerID: 0
   Nombre: 
   VelocidadDIR: 0
@@ -930,6 +936,9 @@ MonoBehaviour:
   RigidbodyPlayer01: {fileID: 0}
   Player01Rot: {fileID: 997509087}
   MousePosition3D: {fileID: 648561387}
+  PlayerID: 0
+  Nombre: 
+  VelocidadDIR: 0
 --- !u!1 &1269298043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,21 +1737,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!114 &1714331346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714331344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba1fa6c99b73df44a5ca9197464c435, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerID: 1
-  Nombre: 
-  VelocidadDIR: 0
 --- !u!4 &1714331347 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44c20e742d1919b4487a837327f855c5, type: 3}
@@ -1777,6 +1771,9 @@ MonoBehaviour:
   RigidbodyPlayer01: {fileID: 1714331345}
   Player01Rot: {fileID: 1714331347}
   MousePosition3D: {fileID: 648561387}
+  PlayerID: 1
+  Nombre: 
+  VelocidadDIR: 0
 --- !u!1 &1767578066
 GameObject:
   m_ObjectHideFlags: 0
