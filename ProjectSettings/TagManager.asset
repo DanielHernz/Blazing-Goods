@@ -6,6 +6,15 @@ TagManager:
   tags:
   - Caja
   - Prop
+  - BUR
+  - TEC01
+  - TEC02
+  - TEC03
+  - NA
+  - INT
+  - CAJAG
+  - CAJAM
+  - CAJAP
   layers:
   - Default
   - TransparentFX
