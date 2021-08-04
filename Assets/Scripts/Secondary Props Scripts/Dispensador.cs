@@ -4,21 +4,43 @@ using UnityEngine;
 
 public class Dispensador : MonoBehaviour
 {
+    private bool TriggerON;
+    private GameObject PlayerGameObject;
+    private Transform PlayerTransform;
+    public Transform Hijo;
+
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerGameObject = GameObject.FindGameObjectWithTag("Player");
+        PlayerTransform = PlayerGameObject.GetComponent<Transform>();
     }
-
+    private void OnTriggerEnter(Collider collider) 
+    {
+        TriggerON = true;
+        Debug.Log("TriggerON ="+ TriggerON);
+    }
+    private void OnTriggerExit(Collider collider) 
+    {
+        TriggerON = false;
+        Debug.Log("TriggerON ="+ TriggerON);
+    }
     // Update is called once per frame
     void Update()
     {
-        //Asignar GameObject fuente
-        //Asignar GameObject a instanciar
-        //if {PlayerControl.ManosVacias = true}
-            //if {oncollisionenter con collider hijo de player}
-                //if {mouse down}
-                    //Instanciar GameObject
-                    //Convertir GameObject en hijo de Player
+        if (TriggerON == true)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                Hijo.SetParent(PlayerTransform);
+                Debug.Log("Levantar");  
+            } 
+            if (Input.GetMouseButton(1))
+            {
+                Hijo.SetParent(gameObject.transform);
+                Debug.Log("Dejar");  
+            } 
+        }
     }
 }
