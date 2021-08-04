@@ -23,7 +23,7 @@ public class Boton : MonoBehaviour
         Cambio_Color_Boton = GetComponent<Renderer>();
     }
 
-    IEnumerator Esperar(){yield return new WaitForSecondsRealtime(2);}
+    //IEnumerator Esperar(){yield return new WaitForSecondsRealtime(2);}
 
     private void OnTriggerEnter(Collider collider) 
     {

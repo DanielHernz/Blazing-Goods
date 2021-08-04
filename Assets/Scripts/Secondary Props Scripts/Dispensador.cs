@@ -31,12 +31,12 @@ public class Dispensador : MonoBehaviour
     {
         if (TriggerON == true)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 Hijo.SetParent(PlayerTransform);
                 Debug.Log("Levantar");  
             } 
-            if (Input.GetMouseButton(1))
+            if (Input.GetMouseButtonDown(1))
             {
                 Hijo.SetParent(gameObject.transform);
                 Debug.Log("Dejar");  
