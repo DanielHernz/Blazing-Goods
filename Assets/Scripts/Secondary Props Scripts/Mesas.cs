@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Mesas : MonoBehaviour
 {
-    private bool TriggerON;
-    private GameObject PlayerGameObject;
-    private Transform PlayerTransform;
+    protected bool TriggerON;
+    protected GameObject PlayerGameObject;
+    protected Transform PlayerTransform;
     public Transform Hijo;
 
     
@@ -15,33 +15,25 @@ public class Mesas : MonoBehaviour
     {
         PlayerGameObject = GameObject.FindGameObjectWithTag("Player");
         PlayerTransform = PlayerGameObject.GetComponent<Transform>();
-        Hijo = PlayerTransform.GetChild(11).transform;
+        //Hijo = PlayerTransform.GetChild(11).transform;
     }
-    private void OnTriggerEnter(Collider collider) 
+    protected void OnTriggerEnter(Collider collider) 
     {
         TriggerON = true;
         Debug.Log("TriggerON ="+ TriggerON);
     }
-    private void OnTriggerExit(Collider collider) 
+    protected void OnTriggerExit(Collider collider) 
     {
         TriggerON = false;
         Debug.Log("TriggerON ="+ TriggerON);
     }
+    protected void ChildCheck()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
     {
-        if (TriggerON == true)
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                Hijo.SetParent(PlayerTransform);
-                Debug.Log("Levantar");  
-            } 
-            if (Input.GetMouseButtonDown(1))
-            {
-                Hijo.SetParent(gameObject.transform);
-                Debug.Log("Dejar");  
-            } 
-        }
+
     }
 }
