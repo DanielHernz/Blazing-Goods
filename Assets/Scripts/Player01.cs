@@ -21,6 +21,7 @@ public class Player01 : MonoBehaviour
     public string Nombre;
     public int VelocidadDIR;
     BasePlayers bdPlayers =new BasePlayers();
+
     private void Awake() 
     {
         AnimPlayer = GetComponent<Animator>();
@@ -43,9 +44,8 @@ public class Player01 : MonoBehaviour
             }
         }
     }
-
     private void Update() 
-    {
+    {   
         if(Input.GetMouseButtonDown(0)) //Cuando se precione click izquierdo, la animación loop correrá y cuando se precione click derecho se detendrá
         {
             AnimON = true;

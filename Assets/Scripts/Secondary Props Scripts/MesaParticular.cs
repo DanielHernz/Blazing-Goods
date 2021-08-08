@@ -14,32 +14,28 @@ public class MesaParticular : Mesas
         //Hijo = PlayerTransform.GetChild(11).transform;
     
         Hijo_Mesa_Trans = gameObject.GetComponent<Transform>();
+        
     }
-
+    
     // Update is called once per frame
     void Update()
-    {        
+    {   
         if (TriggerON == true)
         {
-            Hijo = PlayerTransform.GetChild(11).transform; 
-            if (Hijo == null)
+            if (Input.GetMouseButtonDown(0))
             {
-                Hijo_Mesa_Trans = transform.GetChild(0);
-                Debug.Log("100"); 
-                if (Input.GetMouseButtonDown(0))
-                {
-                    Hijo_Mesa_Trans.SetParent(PlayerTransform);
-                    Debug.Log("2"); 
-                } 
-            }
-            if (Hijo)
+                //Hijo = PlayerTransform.GetChild(11).transform;
+                Hijo = transform.GetChild(0);
+                Hijo.SetParent(PlayerTransform);
+                Debug.Log("1"); 
+            } 
+            if (Input.GetMouseButtonDown(1))
             {
-                if (Input.GetMouseButtonDown(1))
-                {
-                    Hijo.SetParent(gameObject.transform);
-                    Debug.Log("1"); 
-                } 
-            }
+                //Hijo = PlayerTransform.GetChild(11).transform;
+                Hijo = PlayerTransform.GetChild(11);
+                Hijo.SetParent(transform);
+                Debug.Log("2"); 
+            } 
         }
     }
 }
