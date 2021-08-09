@@ -6,7 +6,7 @@ public class VariablesBase : MonoBehaviour
 {   protected bool TriggerON;
     protected GameObject PlayerGameObject;
     protected Transform PlayerTransform;
-    public Transform Hijo,Dispensador;
+    public Transform Hijo,Dispensador,Hijo_Dispensado;
 
 
 

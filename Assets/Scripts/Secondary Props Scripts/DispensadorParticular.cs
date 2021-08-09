@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class DispensadorParticular : VariablesBase
 {
+    private Vector3 Posicion_Dispensador;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerGameObject = GameObject.FindGameObjectWithTag("Player");
+        PlayerTransform = PlayerGameObject.GetComponent<Transform>(); 
+
+        Posicion_Dispensador = transform.position;
     }
 
     // Update is called once per frame
@@ -17,9 +22,12 @@ public class DispensadorParticular : VariablesBase
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Transform Instanciacion = Instantiate(Hijo,new Vector3(0,0,0),Quaternion.identity);
+                //Transform Instanciacion = Instantiate(Hijo,new Vector3(0,0,0),Quaternion.identity);
+                Transform Instanciacion = Instantiate(Hijo,Posicion_Dispensador,Quaternion.identity);
+
                 Instanciacion.parent = Dispensador;
-                Hijo.SetParent(PlayerTransform);
+                Hijo_Dispensado = Dispensador.GetChild(0);
+                Hijo_Dispensado.SetParent(PlayerTransform);
             } 
         }
     }

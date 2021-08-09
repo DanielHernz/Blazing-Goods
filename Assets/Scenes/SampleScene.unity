@@ -234,6 +234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &90941802
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,6 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &100273890
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &108158645
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &193284634
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &639919932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &777855441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1330,6 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 445948908148758528, guid: 56ed83e7534fd6f448dcd65e0fa21a02, type: 3}
   Dispensador: {fileID: 777855445}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &865000330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &954196036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,6 +1911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,6 +2263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1294274613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,7 +2354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294274613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.581044, y: 3.3851805, z: -1.1896672}
+  m_LocalPosition: {x: -12.581044, y: 3.77, z: -1.1896672}
   m_LocalScale: {x: 3, y: 1.8, z: 3}
   m_Children: []
   m_Father: {fileID: 1616763021}
@@ -2364,6 +2374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 1298184204193882443, guid: 713a3aa6a597f174ea234a7a82d9cc68, type: 3}
   Dispensador: {fileID: 1294274617}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1302031162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2474,6 +2485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1332023524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,6 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1334402752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +2707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1351839984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,7 +2893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374191632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.581044, y: 3.3851805, z: -7.5196676}
+  m_LocalPosition: {x: -12.581044, y: 3.74, z: -7.5196676}
   m_LocalScale: {x: 3, y: 1.8, z: 3}
   m_Children: []
   m_Father: {fileID: 1616763021}
@@ -2899,6 +2913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 2386800562656519549, guid: 7e05a7221f8eccc43b4429541830193d, type: 3}
   Dispensador: {fileID: 1374191636}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1413437473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3254,6 +3269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &1653221828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,6 +3380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1001 &1714331343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3597,6 +3614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2000094461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,6 +3725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2027103991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,6 +3836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2062289739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4022,6 +4042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2072304094
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,6 +4153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2118066467
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,3 +4361,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hijo: {fileID: 0}
   Dispensador: {fileID: 0}
+  Hijo_Dispensado: {fileID: 0}
