@@ -771,8 +771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accbfecc3ed295d4c9ab88f804f89244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hijo: {fileID: 0}
-  Dispensador: {fileID: 0}
+  Hijo: {fileID: 8499656628648824953, guid: 7ab5ad588f7f90c4caf3cba8f0c1eac4, type: 3}
+  Dispensador: {fileID: 402220451}
   Hijo_Dispensado: {fileID: 0}
 --- !u!1 &639919932
 GameObject:
@@ -1223,8 +1223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accbfecc3ed295d4c9ab88f804f89244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hijo: {fileID: 0}
-  Dispensador: {fileID: 0}
+  Hijo: {fileID: 3294490258418948593, guid: cc12bbc8ecc84814ab680221e6eff81d, type: 3}
+  Dispensador: {fileID: 736340869}
   Hijo_Dispensado: {fileID: 0}
 --- !u!1 &777855441
 GameObject:
@@ -2119,10 +2119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795b6b6967eca014fb812a021905f54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TriggerON: 0
-  PlayerGameObject: {fileID: 0}
-  PlayerTransform: {fileID: 0}
-  Hijo: {fileID: 0}
 --- !u!4 &1158662621
 Transform:
   m_ObjectHideFlags: 0
@@ -3378,8 +3374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accbfecc3ed295d4c9ab88f804f89244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hijo: {fileID: 0}
-  Dispensador: {fileID: 0}
+  Hijo: {fileID: 3740329905996254613, guid: 25cab43b89b610e4eb057da60d10ab8b, type: 3}
+  Dispensador: {fileID: 1653221832}
   Hijo_Dispensado: {fileID: 0}
 --- !u!1001 &1714331343
 PrefabInstance:
@@ -3834,8 +3830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: accbfecc3ed295d4c9ab88f804f89244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hijo: {fileID: 0}
-  Dispensador: {fileID: 0}
+  Hijo: {fileID: 7849775223479395397, guid: aeef89ec1106232439203db8da1c6399, type: 3}
+  Dispensador: {fileID: 2027103995}
   Hijo_Dispensado: {fileID: 0}
 --- !u!1 &2062289739
 GameObject:

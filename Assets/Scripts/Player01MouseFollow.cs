@@ -17,7 +17,7 @@ public class Player01MouseFollow : MonoBehaviour
     private void Update() 
     {
         Ray ray = Camara.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit raycastaHit))
+        if (Physics.Raycast(ray, out RaycastHit raycastaHit,float.MaxValue, LayerMask.NameToLayer("Ignore Ray")))
         {
             transform.position = raycastaHit.point;
         }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1298184204193882442}
   - component: {fileID: 1298184204193882485}
   - component: {fileID: 8632601177984907683}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CajaM
   m_TagString: CAJAM
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ BoxCollider:
   m_GameObject: {fileID: 1298184204193882487}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
