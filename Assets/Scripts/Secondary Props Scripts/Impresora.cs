@@ -4,40 +4,46 @@ using UnityEngine;
 
 public class Impresora : Boton
 {
-    public Transform NA;
-    public Transform INT;
-    private Vector3 Pos_Impresora;
+    public Transform NA,INT;
     private Transform Etiqueta, Player_Trans;
     private GameObject Player_GO;
+    public Renderer Render_IMP;
+    public Material Material_en_Turno,IMP_NA,IMP_INT;
 
     // Start is called before the first frame update
     void Start()
     {
         Player_GO = GameObject.FindGameObjectWithTag("Player");
         Player_Trans = Player_GO.transform;
-
-        Pos_Impresora = transform.position;
+        //Render_IMP = gameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (TriggerON == true && Case01_ON == true)
+
+        if (TriggerON == true)
         {
-            if (Input.GetMouseButtonDown(0)) 
+            if (Material_en_Turno = IMP_NA) 
             {
-                Transform Instanciacion = Instantiate(NA,Pos_Impresora,Quaternion.identity);
-                Instanciacion.parent = Impresora_Trans;
-                Etiqueta = Impresora_Trans.GetChild(0);
+                if (Input.GetMouseButtonDown(0))
+                {
+                Transform Instanciacion = Instantiate(NA,transform.position,Quaternion.identity);
+                Instanciacion.parent = transform;
+                Etiqueta = transform.GetChild(0);
                 Etiqueta.SetParent(Player_Trans);
+                }
             }
-            if (Input.GetMouseButtonDown(1)) 
+            if (Material_en_Turno = IMP_INT) 
             {
-                Transform Instanciacion = Instantiate(INT,Pos_Impresora,Quaternion.identity);
-                Instanciacion.parent = Impresora_Trans;
-                Etiqueta = Impresora_Trans.GetChild(0);
+                if (Input.GetMouseButtonDown(0))
+                {
+                Transform Instanciacion = Instantiate(INT,transform.position,Quaternion.identity);
+                Instanciacion.parent = transform;
+                Etiqueta = transform.GetChild(0);
                 Etiqueta.SetParent(Player_Trans);
-            } 
+                }
+            }
         }
     }
 }

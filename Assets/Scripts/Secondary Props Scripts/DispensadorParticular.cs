@@ -22,9 +22,7 @@ public class DispensadorParticular : VariablesBase
         {
             if (Input.GetMouseButtonDown(0))
             {
-                //Transform Instanciacion = Instantiate(Hijo,new Vector3(0,0,0),Quaternion.identity);
                 Transform Instanciacion = Instantiate(Hijo,Posicion_Dispensador,Quaternion.identity);
-
                 Instanciacion.parent = Dispensador;
                 Hijo_Dispensado = Dispensador.GetChild(0);
                 Hijo_Dispensado.SetParent(PlayerTransform);
