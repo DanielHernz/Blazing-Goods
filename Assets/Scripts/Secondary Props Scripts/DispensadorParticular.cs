@@ -10,7 +10,7 @@ public class DispensadorParticular : VariablesBase
     void Start()
     {
         PlayerGameObject = GameObject.FindGameObjectWithTag("Player");
-        PlayerTransform = PlayerGameObject.GetComponent<Transform>(); 
+        PlayerTransform = PlayerGameObject.transform; 
 
         Posicion_Dispensador = transform.position;
     }

@@ -3113,6 +3113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d94592f10318b144c992b5c224bd4b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Impresora_G_O: {fileID: 1566784767}
+  Amarillo_NA: {fileID: 0}
+  Morado_INT: {fileID: 0}
+  NA: {fileID: 2693212563962970879, guid: 92368e3ee35a9b5408b2e1ebf7b34c98, type: 3}
+  INT: {fileID: 5348402236250974944, guid: 7ef8335c64d50444a888b48a2a0dc66c, type: 3}
 --- !u!1 &1616763020
 GameObject:
   m_ObjectHideFlags: 0
