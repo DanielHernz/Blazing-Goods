@@ -15,33 +15,34 @@ public class Impresora : Boton
     {
         Player_GO = GameObject.FindGameObjectWithTag("Player");
         Player_Trans = Player_GO.transform;
-        //Render_IMP = gameObject.GetComponent<Renderer>();
+        Render_IMP = gameObject.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Material_en_Turno = Render_IMP.material;
         if (TriggerON == true)
         {
-            if (Material_en_Turno = IMP_NA) 
+            //Material_en_Turno = Render_IMP.material;
+            if (Material_en_Turno == IMP_NA)
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                Transform Instanciacion = Instantiate(NA,transform.position,Quaternion.identity);
-                Instanciacion.parent = transform;
-                Etiqueta = transform.GetChild(0);
-                Etiqueta.SetParent(Player_Trans);
+                    Transform Instanciacion = Instantiate(NA,transform.position,Quaternion.identity);
+                    Instanciacion.parent = transform;
+                    Etiqueta = transform.GetChild(0);
+                    Etiqueta.SetParent(Player_Trans);
                 }
             }
-            if (Material_en_Turno = IMP_INT) 
+            if (Material_en_Turno == IMP_INT)
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                Transform Instanciacion = Instantiate(INT,transform.position,Quaternion.identity);
-                Instanciacion.parent = transform;
-                Etiqueta = transform.GetChild(0);
-                Etiqueta.SetParent(Player_Trans);
+                    Transform Instanciacion = Instantiate(INT,transform.position,Quaternion.identity);
+                    Instanciacion.parent = transform;
+                    Etiqueta = transform.GetChild(0);
+                    Etiqueta.SetParent(Player_Trans);
                 }
             }
         }
