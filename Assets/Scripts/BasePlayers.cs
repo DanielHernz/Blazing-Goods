@@ -1,9 +1,8 @@
 //Hernández Gutiérrez Daniel
 //Programación Orientada a Objetos
 
-// Controlador. Entregable 24 de Julio.
 /*
-Este script asigna los valores a las variables declaradas en el constructor y las ordena en un array.
+Script designado a heredar las variables declaradas en el constructor para asignarles finalment eun valor.
 */
 
 using System.Collections;
@@ -12,8 +11,11 @@ using UnityEngine;
 
 public class BasePlayers : MonoBehaviour
 {
-    public PlayerConstructor[] NuevoJugador;
+    public PlayerConstructor[] NuevoJugador; //Creamos un array para que más de un elemento de la misma clase herede las variables.
 
+/*
+Antes que el juego se ejecute estas variables ya tienen sus correspondientes valores.
+*/
 
     // Start is called before the first frame update
     void Awake()

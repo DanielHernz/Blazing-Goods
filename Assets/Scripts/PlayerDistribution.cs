@@ -1,4 +1,9 @@
-//Este script asigna el array del script BasePlayers a los players 1 y 2.
+//Hernández Gutiérrez Daniel
+//Programación Orientada a Objetos
+
+/*
+Script dedicado a crear un sistema que automaticamente se encuentren objetos y se les asignen las variables.
+*/
 
 using System.Collections;
 using System.Collections.Generic;
@@ -19,11 +24,22 @@ public class PlayerDistribution : MonoBehaviour
     {
         bdPlayers = GameObject.FindObjectOfType<BasePlayers>();
         
-        CargarDatos(PlayerID);
+        CargarDatos(PlayerID); //Ejecutamos el método al iniciar y pedimos de regreso la variable integral ID
     }
+
+/*
+El plan era que el videojuego pudiera jugarse con dos jugadores; por eso este script contenía este método.
+La razón por la que no se pudo realizar este objetivo fue que para poder rotar al personaje se requería
+del puntero del mouse. Si se continuaba con la jugabilidad de dos jugadores ambos jugadores verían al mismo sitio.
+*/
 
     void CargarDatos(int id)
     {
+/*
+        Este ciclo estaba delimitado por la cantidad de jugadores declarados en el script BasePlayers
+        Y mediante el ciclo avanzaba la asignación de sus variables lo hacia tambíen probresivamente.
+*/
+
         for (int i = 0; i < bdPlayers.NuevoJugador.Length; i++)
         {
             if (bdPlayers.NuevoJugador[i].PlayerID==id)
@@ -32,27 +48,5 @@ public class PlayerDistribution : MonoBehaviour
                 this.VelocidadDIR=bdPlayers.NuevoJugador[i].VelocidadDIR;
             }
         }
-    }
-
-    private void Update() 
-    {
-        if (Input.GetKey("w"))
-        {
-            RigidbodyPlayer01.AddForce(0,0,VelocidadDIR * Time.deltaTime);
-        }
-        if (Input.GetKey("s"))
-        {
-            RigidbodyPlayer01.AddForce(0,0,-VelocidadDIR * Time.deltaTime);
-        }
-        if (Input.GetKey("a"))
-        {
-            RigidbodyPlayer01.AddForce(-VelocidadDIR * Time.deltaTime,0,0);
-        }
-        if (Input.GetKey("d"))
-        {
-            RigidbodyPlayer01.AddForce(VelocidadDIR * Time.deltaTime,0,0);
-        }
-
-        transform.LookAt(MousePosition3D);
     }
 }

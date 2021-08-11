@@ -1,9 +1,8 @@
 //Hernández Gutiérrez Daniel
 //Programación Orientada a Objetos
 
-// Controlador. Entregable 24 de Julio.
-
-/*Este script recopila sus variables del constructor, provoca el movimiento y rotación del personaje. Además de reproducir las respectivas animaciones.
+/*
+Este script es el principal del player que permite su movimiento y rotación.
 */
 
 using System.Collections;

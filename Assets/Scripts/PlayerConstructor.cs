@@ -1,9 +1,8 @@
 //Hernández Gutiérrez Daniel
 //Programación Orientada a Objetos
 
-// Controlador. Entregable 24 de Julio.
 /*
-Constructor que declara las variables base.
+Constructor que declara las variables base para el script principal del player.
 */
 
 using System.Collections;
@@ -19,6 +18,10 @@ public class PlayerConstructor
     
     private Transform PosicionPlayer;
 
+/*
+Como este script esta destinado a ser constructor, no puede llevar un método que esperemos que pueda ejecutar.
+Lo unico que declaramos son las variables y les asignamos nombres para mandarlas a llamar.
+*/
     public PlayerConstructor(string Nombre, int ID, int VelD)
     {
         this.PlayerID=ID;
